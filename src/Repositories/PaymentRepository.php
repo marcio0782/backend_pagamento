@@ -54,7 +54,7 @@ class PaymentRepository implements PaymentRepositoryInterface
         try {
             $createdAt = (new \DateTimeImmutable($createdAt))->format('c');
         } catch (\Throwable $e) {
-            // Keep original string if parsing fails
+            // Keep original string if 
         }
 
         return new Payment(
